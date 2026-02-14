@@ -236,7 +236,8 @@ function draw() {
     updateHearts();
     drawHearts();
     drawText();
-    frameNumber += 0.4;
+    let speed = window.innerWidth < 600 ? 1 : 0.4;
+    frameNumber += speed;
     window.requestAnimationFrame(draw);
 }
 
