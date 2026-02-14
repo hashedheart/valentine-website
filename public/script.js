@@ -126,7 +126,7 @@ function drawTextWithLineBreaks(lines, x, y, fontSize, lineHeight) {
 
 function drawText() {
     var fontSize = Math.min(30, window.innerWidth / 24);
-    var lineHeight = 8;
+    var lineHeight = window.innerWidth < 600 ? 6 : 8;
 
     context.font = fontSize + "px Comic Sans MS";
     context.textAlign = "center";
@@ -136,12 +136,20 @@ function drawText() {
 
     if(frameNumber < 250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("cada día no puedo creer lo afortunado que soy", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["cada día no puedo creer", "lo afortunado que soy"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("cada día no puedo creer lo afortunado que soy", canvas.width/2, canvas.height/2);
+        }
         opacity += 0.01;
     }
     if(frameNumber >= 250 && frameNumber < 500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("cada día no puedo creer lo afortunado que soy", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["cada día no puedo creer", "lo afortunado que soy"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("cada día no puedo creer lo afortunado que soy", canvas.width/2, canvas.height/2);
+        }
         opacity -= 0.01;
     }
 
@@ -149,7 +157,7 @@ function drawText() {
 
     if(frameNumber > 500 && frameNumber < 750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        if (window.innerWidth < 600) {
+        if(window.innerWidth < 600){
             drawTextWithLineBreaks(["entre trillones y trillones de estrellas,", "a lo largo de miles de millones de años"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         } else {
             context.fillText("entre trillones y trillones de estrellas, a lo largo de miles de millones de años", canvas.width/2, canvas.height/2);
@@ -158,7 +166,7 @@ function drawText() {
     }
     if(frameNumber >= 750 && frameNumber < 1000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        if (window.innerWidth < 600) {
+        if(window.innerWidth < 600){
             drawTextWithLineBreaks(["entre trillones y trillones de estrellas,", "a lo largo de miles de millones de años"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         } else {
             context.fillText("entre trillones y trillones de estrellas, a lo largo de miles de millones de años", canvas.width/2, canvas.height/2);
@@ -170,12 +178,20 @@ function drawText() {
 
     if(frameNumber > 1000 && frameNumber < 1250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("estar vivo y poder compartir esta vida contigo", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["estar vivo y poder compartir", "esta vida contigo"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("estar vivo y poder compartir esta vida contigo", canvas.width/2, canvas.height/2);
+        }
         opacity += 0.01;
     }
     if(frameNumber >= 1250 && frameNumber < 1500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("estar vivo y poder compartir esta vida contigo", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["estar vivo y poder compartir", "esta vida contigo"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("estar vivo y poder compartir esta vida contigo", canvas.width/2, canvas.height/2);
+        }
         opacity -= 0.01;
     }
 
@@ -183,12 +199,20 @@ function drawText() {
 
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("es algo increíblemente e inimaginablemente improbable", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["es algo increíblemente e", "inimaginablemente improbable"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("es algo increíblemente e inimaginablemente improbable", canvas.width/2, canvas.height/2);
+        }
         opacity += 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("es algo increíblemente e inimaginablemente improbable", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["es algo increíblemente e", "inimaginablemente improbable"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("es algo increíblemente e inimaginablemente improbable", canvas.width/2, canvas.height/2);
+        }
         opacity -= 0.01;
     }
 
@@ -196,12 +220,20 @@ function drawText() {
 
     if(frameNumber > 2000 && frameNumber < 2250){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("y aun así aquí estoy, con la oportunidad imposible de conocerte", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["y aun así aquí estoy, con la", "oportunidad imposible de conocerte"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("y aun así aquí estoy, con la oportunidad imposible de conocerte", canvas.width/2, canvas.height/2);
+        }
         opacity += 0.01;
     }
     if(frameNumber >= 2250 && frameNumber < 2500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("y aun así aquí estoy, con la oportunidad imposible de conocerte", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["y aun así aquí estoy, con la", "oportunidad imposible de conocerte"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("y aun así aquí estoy, con la oportunidad imposible de conocerte", canvas.width/2, canvas.height/2);
+        }
         opacity -= 0.01;
     }
 
@@ -209,19 +241,31 @@ function drawText() {
 
     if(frameNumber > 2500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("te amo tanto Jade, más de lo que el tiempo y el universo pueden contener", canvas.width/2, canvas.height/2);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["te amo tanto Jade, más de lo que", "el tiempo y el universo pueden contener"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+        } else {
+            context.fillText("te amo tanto Jade, más de lo que el tiempo y el universo pueden contener", canvas.width/2, canvas.height/2);
+        }
         opacity += 0.01;
     }
 
     if(frameNumber >= 2750){
         context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
-        context.fillText("y quiero pasar cada instante del mundo compartiendo ese amor contigo", canvas.width/2, canvas.height/2 + 60);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["y quiero pasar cada instante del mundo", "compartiendo ese amor contigo"], canvas.width/2, canvas.height/2 + 60, fontSize, lineHeight);
+        } else {
+            context.fillText("y quiero pasar cada instante del mundo compartiendo ese amor contigo", canvas.width/2, canvas.height/2 + 60);
+        }
         secondOpacity += 0.01;
     }
 
     if(frameNumber >= 3000){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Feliz Día de San Valentín ❤️", canvas.width/2, canvas.height/2 + 120);
+        if(window.innerWidth < 600){
+            drawTextWithLineBreaks(["Feliz Día de San Valentín ❤️"], canvas.width/2, canvas.height/2 + 120, fontSize, lineHeight);
+        } else {
+            context.fillText("Feliz Día de San Valentín ❤️", canvas.width/2, canvas.height/2 + 120);
+        }
         thirdOpacity += 0.01;
         button.style.display = "block";
     }
@@ -236,8 +280,7 @@ function draw() {
     updateHearts();
     drawHearts();
     drawText();
-    let speed = window.innerWidth < 600 ? 1 : 0.4;
-    frameNumber += speed;
+    frameNumber += 0.4;
     window.requestAnimationFrame(draw);
 }
 
