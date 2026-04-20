@@ -262,9 +262,9 @@ function drawText() {
     if(frameNumber >= 3000){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
         if(window.innerWidth < 600){
-            drawTextWithLineBreaks(["Feliz Nueve Meses ❤️"], canvas.width/2, canvas.height/2 + 120, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Felices Nueve Meses ❤️"], canvas.width/2, canvas.height/2 + 120, fontSize, lineHeight);
         } else {
-            context.fillText("Feliz Nueve Meses ❤️", canvas.width/2, canvas.height/2 + 120);
+            context.fillText("Felices Nueve Meses ❤️", canvas.width/2, canvas.height/2 + 120);
         }
         thirdOpacity += 0.01;
         button.style.display = "block";
