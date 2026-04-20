@@ -242,9 +242,9 @@ function drawText() {
     if(frameNumber > 2500){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
         if(window.innerWidth < 600){
-            drawTextWithLineBreaks(["te amo tanto Jade, más de lo que", "el tiempo y el universo pueden contener"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["te amo tanto Valentina, más de lo que", "el tiempo y el universo pueden contener"], canvas.width/2, canvas.height/2, fontSize, lineHeight);
         } else {
-            context.fillText("te amo tanto Jade, más de lo que el tiempo y el universo pueden contener", canvas.width/2, canvas.height/2);
+            context.fillText("te amo tanto Valentina, más de lo que el tiempo y el universo pueden contener", canvas.width/2, canvas.height/2);
         }
         opacity += 0.01;
     }
@@ -262,9 +262,9 @@ function drawText() {
     if(frameNumber >= 3000){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
         if(window.innerWidth < 600){
-            drawTextWithLineBreaks(["Feliz Día de San Valentín ❤️"], canvas.width/2, canvas.height/2 + 120, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Feliz Nueve Meses ❤️"], canvas.width/2, canvas.height/2 + 120, fontSize, lineHeight);
         } else {
-            context.fillText("Feliz Día de San Valentín ❤️", canvas.width/2, canvas.height/2 + 120);
+            context.fillText("Feliz Nueve Meses ❤️", canvas.width/2, canvas.height/2 + 120);
         }
         thirdOpacity += 0.01;
         button.style.display = "block";
